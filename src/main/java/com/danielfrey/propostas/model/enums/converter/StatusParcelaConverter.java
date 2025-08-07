@@ -1,6 +1,7 @@
 package com.danielfrey.propostas.model.enums.converter;
 
 import com.danielfrey.propostas.model.enums.StatusParcela;
+
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 

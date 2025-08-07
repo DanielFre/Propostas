@@ -1,5 +1,8 @@
 package com.danielfrey.propostas.model;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
 import com.danielfrey.propostas.model.enums.StatusParcela;
 
 import jakarta.persistence.Column;
@@ -15,9 +18,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.math.BigDecimal;
-import java.time.LocalDate;
 
 /**
  * Representa uma parcela de uma proposta de crédito.

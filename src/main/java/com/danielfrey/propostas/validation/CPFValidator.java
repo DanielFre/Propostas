@@ -8,7 +8,7 @@ public class CPFValidator implements ConstraintValidator<CPF, String> {
     @Override
     public boolean isValid(String cpf, ConstraintValidatorContext context) {
         if (cpf == null || cpf.isEmpty()) {
-            return true; // Consideramos nulo/vazio como válido, para usar @NotBlank separadamente
+            return true; // Considera nulo/vazio como válido, para usar @NotBlank separadamente
         }
 
         // Remove caracteres não numéricos

@@ -1,10 +1,11 @@
 package com.danielfrey.propostas.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import lombok.Getter;
-
 import java.time.Instant;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import lombok.Getter;
 
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
