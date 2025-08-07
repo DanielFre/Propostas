@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:15
+    container_name: credit_db
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5433:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  app:
+    build: . # Constrói a imagem a partir do Dockerfile na pasta atual.
+    container_name: credit_app
+    restart: always
+    depends_on:
+      - db # Garante que o contêiner 'db' suba antes do contêiner 'app'.
+    ports:
+      - "8080:8080" # Mapeia a porta da API.
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD}
+
+volumes:
+  db_data:
