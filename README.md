@@ -115,7 +115,10 @@ A aplicação estará disponível em `http://localhost:8080`.
 
 ---
 
-## 🔌 Endpoints da API
+## 🔌 Endpoints da API : 
+[Acesse a documentação no Postman](https://danielfre-3474848.postman.co/workspace/Daniel-Frey's-Workspace~205d4ffc-f540-4d4d-89a4-763021a12a87/collection/47426172-0fac7317-4019-4974-b571-dd7f5f4fee8e?action=share&creator=47426172)
+
+-   **Documentação Interativa (Swagger UI):** http://localhost:8080/swagger-ui.html
 
 ### Criar Nova Proposta
 
