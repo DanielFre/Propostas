@@ -152,7 +152,7 @@ A aplicação estará disponível em `http://localhost:8080`.
 -   **Descrição:** Retorna uma lista paginada de todas as propostas.
 -   **Query Params (Opcionais):**
     -   `page`: Número da página (padrão: `0`).
-    -   `size`: Quantidade de itens por página (padrão: `10`).
+    -   `size`: Quantidade de itens por página (padrão: `20`).
 -   **Exemplo:** `GET /propostas?page=0&size=5`
 -   **Resposta de Sucesso:** `200 OK` com a lista paginada de propostas.
 
@@ -192,7 +192,7 @@ O código-fonte segue uma arquitetura em camadas para organizar as responsabilid
 
 **Daniel Frey - daniel._.frey@hotmail.com)**
 
-<!-- Link do Projeto: `(link do repositório no GitHub)` -->
+<!-- Link do Projeto: `https://github.com/DanielFre/Propostas` -->
 
 ---
 
